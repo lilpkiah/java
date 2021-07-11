@@ -1,0 +1,8 @@
+
+public class Ex04_01 {
+	public static void main(String[] args) {
+		Goods camera = new Goods();
+		camera.name = "Nikon";
+		camera.setName("Nikin132");
+	}
+}

@@ -1,0 +1,22 @@
+
+
+class TV {
+	static String product;
+	static int year;
+	static int inch;
+	
+	public static void TV (String p, int y, int i){
+		product = p;
+		year = y;
+		inch = i;
+	}
+}
+
+public class test1 {
+
+	
+	public static void main(String[] args) {
+		TV myTV = new TV("LG", 2020, 32);
+		myTV.show();
+	}
+}

@@ -1,0 +1,28 @@
+
+public class Circle {
+	
+	private double x, y;
+	private int radius;
+	
+	public Circle(double x, double y, int radius) {
+		this.x = x;
+		this.y = y;
+		this.radius = radius;
+	}
+	
+	public void show() {
+		System.out.println("(" + x + "," + y + ")" + radius);
+	}
+	
+	public void Max(Circle c) {
+		if(((c.x + c.y)*c.radius) > ((this.x + this.y)*this.radius)){
+			this.x = c.x;
+			this.y = c.y;
+			this.radius = c.radius;
+		}
+	}
+	
+	public void Max_show() {
+		System.out.println("가장 면적인 큰 원은 " + "(" + x + "," + y + ")" + radius);
+	}
+}

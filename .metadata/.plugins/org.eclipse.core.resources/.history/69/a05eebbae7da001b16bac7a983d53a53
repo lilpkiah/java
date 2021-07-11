@@ -1,0 +1,16 @@
+
+public class test13 {
+	public static void main(String[] args) {
+		
+		for(int i = 1; i < 100; i++) {
+			
+			int j = i % 10;
+			
+			if((i % 10) % 3 == 0)
+				System.out.println("¹Ú¼ö Â¦");
+			else if((i % 10) % 3 == 0 && (i / 10) % 3 == 0)
+				System.out.println("¹Ú¼ö Â¦Â¦");
+	}
+	
+	}
+}

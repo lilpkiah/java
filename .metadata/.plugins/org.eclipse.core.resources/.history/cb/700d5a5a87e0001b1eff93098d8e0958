@@ -1,0 +1,10 @@
+
+public class Circle {
+	
+	private double x, y;
+	private int radius;
+	
+	public Circle(double x, double y, int radius) {}
+	
+	public void show() {}
+}

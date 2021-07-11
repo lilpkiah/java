@@ -1,0 +1,70 @@
+import java.util.Scanner;
+
+public class test16_2 {
+	public static void main(String[] args) {
+		
+		String strCom[] = {"가위", "바위", "보"};
+		
+		System.out.println("컴퓨터와 가위,바위,보");
+		Scanner sc = new Scanner(System.in);
+		
+		while(true) {
+			System.out.print("가위,바위,보 중 입력>>");
+			
+			String me = sc.nextLine();
+			
+			if(me.equals("그만")) {
+				System.out.println("끝");
+				break;
+			}
+			
+			int nCom = (int)(Math.random()*3);
+			
+			String com = strCom[nCom];
+			
+			
+
+			if(me.equals("가위")) {
+				System.out.print("사용자 = " + user);
+				if(com.equals("바위"))
+					System.out.println(", 컴퓨터 = " + str[n] + ", 컴퓨터가 이겼습니다.");
+				else if(com.equals("가위"))
+					System.out.println(", 컴퓨터 = " + str[n] + ", 비겼습니다.");
+				else if(com.equals("보"))
+					System.out.println(", 컴퓨터 = " + str[n] + ", 컴퓨터가 졌습니다.");
+				else
+					System.out.println(", 컴퓨터 = " + str[n] + ", 다시 하세요.");
+					
+			}
+			
+			else if(me.equals("바위")) {
+				System.out.print("사용자 = " + user);
+				if(com.equals("보"))
+					System.out.println(", 컴퓨터 = " + str[n] + ", 컴퓨터가 이겼습니다.");
+				else if(com.equals("바위"))
+					System.out.println(", 컴퓨터 = " + str[n] + ", 비겼습니다.");
+				else if(com.equals("가위"))
+					System.out.println(", 컴퓨터 = " + str[n] + ", 컴퓨터가 졌습니다.");
+				else
+					System.out.println(", 컴퓨터 = " + str[n] + ", 다시 하세요.");
+					
+			}
+			
+			else if(me.equals("보")) {
+				System.out.print("사용자 = " + user);
+				if(com.equals("가위"))
+					System.out.println(", 컴퓨터 = " + str[n] + ", 컴퓨터가 이겼습니다.");
+				else if(com.equals("보"))
+					System.out.println(", 컴퓨터 = " + str[n] + ", 비겼습니다.");
+				else if(com.equals("바위"))
+					System.out.println(", 컴퓨터 = " + str[n] + ", 컴퓨터가 졌습니다.");
+				else
+					System.out.println(", 컴퓨터 = " + str[n] + ", 다시 하세요.");
+					
+			}
+			
+		}
+		
+		
+	}
+}

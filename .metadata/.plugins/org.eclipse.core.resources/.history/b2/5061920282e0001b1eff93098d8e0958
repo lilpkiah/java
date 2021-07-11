@@ -1,0 +1,20 @@
+
+public class Grade {
+	
+	int math;
+	int science;
+	int english;
+	int avg;
+	
+	Grade(int m, int s, int e){
+		math = m;
+		science = s;
+		english = e;
+	}
+	
+	int average() {
+		avg = math + science + english;
+		return avg;
+	}
+	
+}

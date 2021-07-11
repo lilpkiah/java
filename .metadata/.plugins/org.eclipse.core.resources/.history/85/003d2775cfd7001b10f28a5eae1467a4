@@ -1,0 +1,62 @@
+import java.util.Scanner;
+
+public class test10_11 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		// 10
+		System.out.print("첫번째 원의 중심과 반지름 입력>>");
+		
+		int r_x1 = sc.nextInt();
+		int r_y1 = sc.nextInt();
+		double r1 = sc.nextDouble();
+		
+		System.out.print("두번째 원의 중심과 반지름 입력>>");
+		
+		int r_x2 = sc.nextInt();
+		int r_y2 = sc.nextInt();
+		double r2 = sc.nextDouble();
+		
+		double d = Math.sqrt(((r_x1 - r_x2) * (r_x1 - r_x2)) + ((r_y1 - r_y2) * (r_y1 - r_y2)));
+		
+		if(d <= r1 + r2)
+			System.out.println("두 원은 서로 겹친다.");
+		else
+			System.out.println("두 원은 서로 겹치지 않는다.");
+		
+		
+		// 11 - (1)
+		System.out.print("달을 입력하세요(1~12)>>");
+		int m = sc.nextInt();
+		
+		if(m == 3 || m == 4 || m == 5) {
+			System.out.println("봄");
+		}
+		else if(m == 6 || m == 7 || m == 8) {
+			System.out.println("여름");
+		}
+		else if(m == 9 || m == 10 || m == 11) {
+			System.out.println("가을");
+		}
+		else if(m == 12 || m == 1 || m == 2){
+			System.out.println("겨울");
+		}
+		else {
+			System.out.println("잘못입력");
+		}
+		
+		// 11 - (2)
+		
+		System.out.print("달을 입력하세요(1~12)>>");
+		int m2 = sc.nextInt();
+		
+		switch(m2) {
+		case 3,4,5: System.out.println("봄");
+		case 6,7,8: System.out.println("여름");
+		case 9,10,11: System.out.println("가을");
+		case 12,1,2: System.out.println("겨울");
+		default: System.out.println("잘못입력");
+		}
+		
+	}
+}
